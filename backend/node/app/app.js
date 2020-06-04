@@ -9,6 +9,8 @@ app.get('/', function (req, res) {
 // Rota para /produtos
 app.get('/produtos', function (req, res) {
   res.send('exibindo produtos!');
+  var user_id = req.param('id');
+  res.send('Codigo: '+user_id);	
 })
 
 // Rota para /usuarios
