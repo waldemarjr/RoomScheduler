@@ -1,10 +1,26 @@
-var express = require('express');
-var app = express();
+var express = require('express')
+var app = express()
 
+// Rota para a home, seu domínio.
 app.get('/', function (req, res) {
-  res.send('Teste');
-});
+  res.send('Sua home');
+})
 
-app.listen(3000, function () {
-  console.log('Backend listening on port 3000!');
-});
+// Rota para /produtos
+app.get('/produtos', function (req, res) {
+  res.send('exibindo produtos!');
+})
+
+// Rota para /usuarios
+app.get('/usuarios', function (req, res) {
+  res.send('exibindo usuários');
+})
+
+var server = app.listen(3000, function () {
+
+  var host = server.address().address
+  var port = server.address().port
+
+  console.log('Example app listening at http://%s:%s', host, port)
+
+})

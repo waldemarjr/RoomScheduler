@@ -1,7 +1,7 @@
 {
-  "name": "frontend-app",
+  "name": "room_scheduler_backend-api",
   "version": "1.0.0",
-  "description": "Frontend APP",
+  "description": "Backend - API",
   "author": "Waldemar Dibiazi Junior <waldemarjr@gmail.com>",
   "license": "MIT",
   "main": "app.js",
