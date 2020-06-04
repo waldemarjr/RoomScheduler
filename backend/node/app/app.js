@@ -8,9 +8,8 @@ app.get('/', function (req, res) {
 
 // Rota para /produtos
 app.get('/produtos', function (req, res) {
-  res.send('exibindo produtos!');
-  var user_id = req.param('id');
-  res.send('Codigo: '+user_id);	
+  var id_prod = req.param('id');
+  res.send('Codigo do produto: '+id_prod);	
 })
 
 // Rota para /usuarios
